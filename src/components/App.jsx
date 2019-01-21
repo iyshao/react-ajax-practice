@@ -8,6 +8,7 @@ var postMessage = (message, successCB) => {
     url: url,
     type: 'POST',
     data: JSON.stringify(message),
+    contentType: 'application/json',
     success: function(data) {
       successCB(data); 
     },
